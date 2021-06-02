@@ -1,0 +1,104 @@
+#lambda function(anonymous function)
+
+
+
+1.Anonymous function:
+     
+      - A function without having a name is called anonymous function
+
+
+
+
+2. Purpose of anonymous function:
+
+       -Instant use (one time usages)
+
+
+
+
+3. Syntax of lambda function:
+
+       - lambda input_arguments : expression
+
+
+
+
+4. Example:
+ 
+        s=lambda x : x*x
+        print(s(4))
+
+
+
+
+
+
+#IIFE function:
+
+       -An Immediately-invoked Function Expression (IIFE) is a way to execute functions immediately
+
+     
+example:
+       
+        s=(lambda x : x*x) (2)
+        print(s)
+
+
+
+
+
+
+# Higher order functions:
+
+#Filter function:
+          
+       - we can use filter function to filter values from the given sequence based on some condition.
+       - it returns those elements of sequence,for which function is true.
+
+       -syntax: filter(function,sequence)
+      
+
+
+example:
+        list1=[1,2,3,4,5,6,7,8,9,10]
+        print(list(filter(lambda x : x%2==0,list1)))
+
+
+
+
+
+
+# map function:
+
+       -for every element present in the given sequence, apply some functionality and generate new element with the required modification.
+
+       -syntax: map(function,sequence)
+
+
+example:
+         list1=[1,2,3,4,5]
+         print(list(map(lambda x : x*x,list1)))
+        
+
+
+
+# reduce function:
+
+        -It redues sequence of element into a single element by applying the some function.
+        
+        -python 3 does not support direct reduce function so we have to import reduce from functools  
+      
+        -syntax: reduce(function:sequence)
+
+
+example: 
+         from functools import reduce
+         list1=[1,2,3,4]
+         print(reduce(lambda x,y : x+y,list1))
+
+ 
+                       
+   
+
+           
+        
