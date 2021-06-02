@@ -1,0 +1,134 @@
+# YAML : YAML Ain't Markup Language
+     
+       - YAML is a human-readable data-serialization language.
+      
+       - It is commonly used for configuration files and in applications where data is being stored or transmitted.
+
+       - Support for reading and writing YAML is available for many programming languages.
+        
+       - YAML natively supports three basic data types: scalars (such as strings, integers, and floats), lists, and associative arrays.
+
+       - This is a third party module. so we have to install it manully 
+
+       - this is used to read and write configuration files.
+
+
+
+
+
+# How to install:
+            
+                pip install PyYAML
+
+
+
+
+
+
+# Basic elements of yaml:
+
+
+                            - Indentation of whitespace is used to denote structure.
+
+                            - List members are denoted by a leading hyphen (-).
+
+                            - List members are enclosed in square brackets and separated by commas.
+
+                            - Associative arrays are represented using colon ( : ) in the format of key value pair. They are enclosed in curly braces {}.
+
+                            - Multiple documents with single streams are separated with 3 hyphens (---).
+
+                            - Repeated nodes in each file are initially denoted by an ampersand (&) and by an asterisk (*) mark later.
+
+                            - YAML always requires colons and commas used as list separators followed by space with scalar values.
+
+
+
+
+
+
+
+
+
+# YAML vs. JSON:
+
+
+                    - YAML is a superset of JavaScript Object Notation (JSON) but has some built-in advantages. 
+
+                    - so anything written in JSON can be parsed to YAML
+
+                    - For example, YAML can self-reference, support complex datatypes, embed block literals, support comments, and more. Overall, 
+
+                    - YAML tends to be more readable than JSON as well. 
+               
+                    - YAML: It is a light-weight, human-readable data-representation language.
+
+                    - It is primarily designed to make the format easy to read while including complex features.
+
+
+
+
+
+
+
+
+# Indicator characters
+
+
+
+Sr.No.	 Character                              Functionality
+
+
+1	    _                             It denotes a block sequence entry
+
+
+2	    ?                             It denotes a mapping key
+
+
+3	    :                             It denotes a mapping value
+
+
+4	    ,                             It denotes flow collection entry
+
+
+5	    [                             It starts a flow sequence
+
+
+6	    ]                             It ends a flow sequence
+
+
+7	    {                             It starts a flow mapping
+
+
+8	    }                             It ends a flow mapping
+
+
+9	    #                             It denotes the comments
+
+
+10	    &                             It denotes node’s anchor property
+
+
+11	    *                             It denotes alias node
+
+
+12	    !                             It denotes node’s tag
+
+
+13	    |                             It denotes a literal block scalar
+
+
+14	    >                             It denotes a folded block scalar
+
+
+15	    `                             Single quote surrounds a quoted flow scalar
+
+
+16	    "                             Double quote surrounds double quoted flow scalar
+
+
+17	    %                             It denotes the directive used
+
+  
+
+               
